@@ -1,0 +1,59 @@
+<div class="wrapper">
+  <app-navbar></app-navbar>
+  <app-sidebar moduleName="mahasiswa"></app-sidebar>
+  <!--Content Wrapper. contain page container-->
+  <div class="content-wrapper">
+    <!-- content header (page header)-->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Mahasiswa</h1>
+          </div>
+          <!--/.col1 -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+              <li class="breadcrumb-item active">Mahasiswa</li>
+            </ol>
+          </div>
+          <!--/.col2 -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!--/.container-fluid -->
+    </div>
+    <!-- /.content header -->
+
+    <!-- Main Content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Main Row -->
+        <div class="row"></div>
+        <div class="tables-responsive">
+          <table
+            id="table1"
+            class="table table-hover table-bordered table-striped"
+          >
+            <thead>
+              <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Tempat, Tanggal Lahir</th>
+                <th>JP</th>
+                <th>Alamat</th>
+                <th>Status</th>
+                <th>Tahun Masuk</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <!-- /row (main row) -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content-wrapper -->
+  </div>
+  <app-footer></app-footer>
+</div>
