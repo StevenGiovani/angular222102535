@@ -120,6 +120,26 @@
           </a>
         </li>
         <li class="nav-item">
+          <a
+            [routerLink]="['/forex']"
+            routerLinkActive="router-link-active"
+            class="nav-link {{ moduleName == 'forex' ? 'active' : '' }}"
+          >
+            <i class="nav-icon fa fa-money-bill-alt">
+              <p>forex</p>
+            </i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            [routerLink]="['/cuaca']"
+            routerLinkActive="router-link-active"
+            class="nav-link {{ moduleName == 'cuaca' ? 'active' : '' }}"
+          >
+            <p>cuaca</p></a
+          >
+        </li>
+        <li class="nav-item">
           <a href="/mahasiswa" class="nav-link">
             <i class="nav-icon fas fa-copy"></i>
             <p>Mahasiswa (Non-router)</p>

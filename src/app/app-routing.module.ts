@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import { otentikasiGuard } from './otentikasi.guard';
+import { ForexComponent } from './forex/forex.component';
+import { CuacaComponent } from './cuaca/cuaca.component';
 
 const routes: Routes = [
   { path: 'admin', component: AdminComponent },
@@ -21,6 +23,8 @@ const routes: Routes = [
     component: Dashboard2Component,
     canActivate: [otentikasiGuard],
   },
+  { path: 'forex', component: ForexComponent, canActivate: [otentikasiGuard] },
+  { path: 'cuaca', component: CuacaComponent, canActivate: [otentikasiGuard] },
   { path: 'dashboard3', component: Dashboard3Component },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },

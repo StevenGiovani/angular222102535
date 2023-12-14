@@ -1,5 +1,5 @@
+import { Component, Renderer2, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 declare const $: any;
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
       var row = data[0];
 
       if (row.idCount != '1') {
-        this.showPeringatanModal('id atau password tidak cocok');
+        this.showPeringatanModal('Id atau password tidak cocok');
         return;
       }
 
